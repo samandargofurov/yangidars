@@ -205,15 +205,12 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     transition: all 0.3s;
 }
 .product .item1:hover{
     background: var(--6, #F2F6FC);
-}
-
-.product .item1{
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
 }
 
 .product .item8{
@@ -292,7 +289,7 @@ a{
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px; /* 138.462% */
+    line-height: 36px;
 }
 
 .england-price{
@@ -661,7 +658,6 @@ a{
 }
 
 .item2 .lifetime span{
-    padding-bottom: 6px;
     color: var(--2, #222);
     font-size: 14px;
     font-style: normal;
@@ -670,7 +666,6 @@ a{
 }
 
 .item2 .shipping-cost span{
-    padding-bottom: 6px;
     color: var(--2, #222);
     font-size: 14px;
     font-style: normal;
@@ -679,7 +674,6 @@ a{
 }
 
 .item2 .sum span{
-    margin-bottom: 6px;
     color: var(--2, #222);
     font-size: 14px;
     font-style: normal;
@@ -688,6 +682,7 @@ a{
 }
 
 .item2 .lifetime .date{
+    margin-top: 6px;
     color: var(--2, #222);
     font-size: 20px;
     font-style: normal;
@@ -696,6 +691,7 @@ a{
 }
 
 .item2 .shipping-cost .cost{
+    margin-top: 6px;
     color: var(--2, #222);
     font-size: 20px;
     font-style: normal;
@@ -704,6 +700,7 @@ a{
 }
 
 .item2 .sum .sum-cost{
+    margin-top: 6px;
     color: var(--2, #222);
     font-size: 20px;
     font-style: normal;
@@ -741,20 +738,151 @@ a{
     height: 82px;
 }
 
+/* aside */
 
+.aside-container{
+    margin-top: 170px;
+}
 
+.aside-container h4{
+    width: 695px;
+    color: var(--1, #1F2428);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+}
 
+.aside-container .shopping{
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    gap: 50px;
+}
 
+.aside-container .shopping .list1 .list-text{
+    width: 172px;
+    color: var(--1, #1F2428);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+}
 
+.aside-container .shopping .list1  .list-desc{
+    color: var(--1, #1F2428);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 187.5% */
+}
 
+.aside-container .shopping .list1  .list-desc span{
+    color: var(--7, #01CD7D);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
 
+.aside-container .shopping .list2 .list-text{
+    width: 225px;
+}
 
+.aside-container .shopping .list3 .list-text{
+    width: 191px;
+}
 
+.aside-container .shopping .list4 .list-text{
+    width: 190px;
+}
 
+.aside-container h5{
+    width: 709px;
+    color: var(--1, #1F2428);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px; /* 180% */
+    margin-bottom: 30px;
+}
 
+.aside-container input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--1, #FFF);
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 105.882% */
+    border: none;
+    width: 240px;
+    height: 66px;
+    cursor: pointer;
 
+    border-radius: 36px;
+    background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+    box-shadow: 0px 4px 4px 0px rgba(1, 203, 124, 0.20);
+    transition: all 0.5s;
+}
 
+.aside-container input:hover{
+    background: linear-gradient(90deg, #05a166 0%, #25ac76 96.96%);
+}
 
+/* order style */
+
+.order-container{
+    display: flex;
+    gap: 75px;
+    padding: 40px;
+}
+
+.order-container .order-left{
+    padding-top: 90px;
+}
+
+.order-container .order-left .order-title{
+    color: var(--4, #FFF);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 127.273% */
+    padding-bottom: 20px;
+}
+
+.order-container .order-left .order-desc{
+    color: var(--4, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    padding-bottom: 30px;
+}
+
+.order-container .order-left input{
+    width: 240px;
+    height: 66px;
+    color: var(--1, #FFF);
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 105.882% */
+    border: none;
+    cursor: pointer;
+    
+    border-radius: 36px;
+    background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+    box-shadow: 0px 4px 4px 0px rgba(1, 203, 124, 0.20);
+}
+
+.order-container .order-left input:hover{
+    background: linear-gradient(90deg, #08b975 0%, #189b66 96.96%);
+}
 
 
 
